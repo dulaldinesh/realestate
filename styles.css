@@ -1,0 +1,196 @@
+        /* General Reset */
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+            overflow-wrap: normal;
+        }
+        
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            background-color: #0b0a0a;
+        }
+        /* Header */
+        
+        header {
+            background: linear-gradient(7deg, #000000, #6b0f0f, rgb(26, 1, 1));
+            /* Blue background */
+            color: white;
+            /* White text */
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 130px;
+            animation: blink 1s infinite;
+            box-shadow: 0 0 20px 5px rgba(150, 21, 64, 0.8), 0 0 40px 10px #a0260a99, 0 0 60px 15px rgba(188, 188, 187, 0.4);
+            width: 100%;
+        }
+        
+        .logo {
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 10px;
+            animation: blink 1s infinite;
+            box-shadow: 0 0 20px 5px rgba(214, 200, 205, 0.8), 0 0 40px 10px #0f961199, 0 0 60px 15px rgba(188, 188, 187, 0.4);
+            background: linear-gradient(7deg, #000000, #6b0f0f, rgb(26, 1, 1));
+        }
+        
+        nav {
+            display: flex;
+            gap: 20px;
+            background: linear-gradient(7deg, #000000, #6b0f0f, rgb(26, 1, 1));
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            padding: 5px 10px;
+            border-radius: 5px;
+            text-align: right;
+            font-weight: bold;
+            margin-top: 10px;
+            animation: blink 1s infinite;
+            box-shadow: 0 0 20px 5px rgba(150, 21, 64, 0.8), 0 0 40px 10px #a0260a99, 0 0 60px 15px rgba(188, 188, 187, 0.4);
+            background: linear-gradient(7deg, #000000, #6b0f0f, rgb(26, 1, 1));
+        }
+        
+        nav a:hover {
+            background-color: #762618;
+        }
+        /* Blipping Animation */
+        
+        @keyframes blink {
+            0%,
+            100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.5;
+            }
+        }
+        /* Profile Section */
+        
+        .container {
+            width: 60%;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+            box-shadow: 0 0 20px 5px rgba(224, 218, 220, 0.8), 0 0 40px 10px #2f982499, 0 0 60px 15px rgba(188, 188, 187, 0.4);
+            animation: blink 1s infinite;
+            box-shadow: 0 0 20px 5px rgba(150, 21, 64, 0.8), 0 0 40px 10px #a0260a99, 0 0 60px 15px rgba(188, 188, 187, 0.4);
+        }
+        
+        .profile {
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0 0 20px 5px rgba(224, 218, 220, 0.8), 0 0 40px 10px #2f982499, 0 0 60px 15px rgba(188, 188, 187, 0.4);
+            border-radius: 40px;
+            color: #fff;
+            background: linear-gradient(7deg, #000000, #6b0f0f, rgb(26, 1, 1));
+        }
+        
+        .profile img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            border: 3px solid #501313;
+            box-shadow: 0 0 20px 5px rgba(191, 37, 23, 0.8), 0 0 40px 10px rgba(190, 19, 3, 0.6), 0 0 10px 15px rgba(255, 60, 0, 0.4);
+        }
+        
+        .contact-info {
+            margin: 20px 0;
+            font-size: 30px;
+            animation: blink 1s infinite;
+            box-shadow: 0 0 20px 5px rgba(150, 21, 64, 0.8), 0 0 40px 10px #a0260a99, 0 0 60px 15px rgba(188, 188, 187, 0.4);
+            height: fit-content;
+            box-shadow: 0 0 20px 5px rgba(206, 116, 108, 0.8), 0 0 40px 90px rgba(213, 206, 206, 0.6), 0 0 10px 15px rgba(207, 14, 197, 0.4);
+            background: linear-gradient(7deg, #000000, #6b0f0f, rgb(26, 1, 1));
+        }
+        /* Services Section */
+        
+        .service-items {
+            display: grid;
+            background-color: rgb(162, 94, 94);
+            box-shadow: 0 0 20px 5px rgba(206, 116, 108, 0.8), 0 0 40px 90px rgba(213, 206, 206, 0.6), 0 0 10px 15px rgba(207, 14, 197, 0.4);
+            margin: 20px 0;
+            text-align: center;
+            color: rgb(215, 207, 207);
+            background: linear-gradient(7deg, #000000, #6b0f0f, rgb(26, 1, 1));
+        }
+        
+        .service {
+            background: linear-gradient(7deg, #000000, #6b0f0f, rgb(26, 1, 1));
+            padding: 20px;
+            border-radius: 5px;
+            transition: transform 0.8s;
+            cursor: pointer;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            animation: blink 10s infinite;
+            background-color: #6b4141;
+            background: linear-gradient(7deg, #000000, #6b0f0f, rgb(26, 1, 1));
+        }
+        
+        Contact Form */ .contact-form {
+            max-width: 100%;
+            padding: 20px;
+            font-size: 40px;
+            box-shadow: 0 0 20px 5px rgba(37, 68, 58, 0.8), 0 0 40px 10px rgba(118, 56, 31, 0.6), 0 0 10px 15px rgba(255, 60, 0, 0.4);
+        }
+        
+        .contact-form form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            background-color: #0a0404;
+            color: rgb(18, 28, 208);
+            background: linear-gradient(7deg, #000000, #6b0f0f, rgb(26, 1, 1));
+        }
+        
+        input,
+        select,
+        textarea {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #0a0505;
+            color: rgb(224, 227, 19);
+            font-size: 20px;
+            font-weight: bold;
+            background: linear-gradient(7deg, #000000, #aa9d9d, rgb(26, 1, 1));
+        }
+        
+        .blinking-btn {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            animation: blink 1s infinite;
+            background: linear-gradient(7deg, #000000, #6b0f0f, rgb(26, 1, 1));
+            /* Apply the blinking effect */
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                margin: 10px;
+            }
+            .service-items {
+                grid-template-columns: 1fr;
+            }
+        }
